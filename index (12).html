@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Юрий Макаров — руководитель контента</title>
+<meta name="description" content="Руководитель контента. Контент производит заявки и деньги, а не лайки. Кейсы, цифры, открытые тексты. 8+ лет, Санкт-Петербург, удалённо.">
+<meta name="author" content="Юрий Макаров">
+<link rel="canonical" href="https://trka86.github.io/portfolio/">
+
+<!-- ── Карточка при пересылке в Telegram / WhatsApp / почте ─────────────── -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Юрий Макаров — руководитель контента">
+<meta property="og:description" content="Контент производит заявки и деньги, а не лайки. Система должна пережить мой отпуск и мой уход — оба раза так и вышло. Кейсы, цифры, открытые тексты.">
+<meta property="og:url" content="https://trka86.github.io/portfolio/">
+<meta property="og:image" content="https://trka86.github.io/portfolio/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ── Иконки, manifest, цвет браузера ─────────────────────────────────── -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0B0D10">
+
+<!-- ── Типографика. Заменится на системную, если сеть недоступна ────────── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap&subset=cyrillic,latin" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   ПАЛИТРА — холодная, тёмная
+   ═══════════════════════════════════════════════════════════════════════ */
+:root{
+  --bg:        #0B0D10;
+  --bg-grad:   #0E1216;
+  --surface:   #11151B;
+  --surface-2: #161B22;
+  --line:      #242B34;
+  --line-soft: #1A2027;
+
+  --text:      #E7EDF3;
+  --text-2:    #B4BFCB;
+  --muted:     #7A8794;
+  --faint:     #55616D;
+
+  --accent:    #D9E4EC;
+  --accent-dim:#8FA6B8;
+  --accent-glow: rgba(217,228,236,.10);
+  --positive:  #6FC7B4;
+  --warm:      #D9A96A;
+
+  --sans: 'Golos Text', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --disp: 'Unbounded', 'Golos Text', -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --maxw: 1140px;
+  --gut: clamp(1.15rem, 4.5vw, 3rem);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+
+body{
+  margin:0;
+  background: var(--bg);
+  background-image:
+    radial-gradient(1100px 620px at 78% -8%, rgba(217,228,236,.055), transparent 62%),
+    radial-gradient(760px 460px at 8% 4%, rgba(111,199,180,.03), transparent 60%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.78;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern","liga","calt";
+}
+
+/* сетка-подложка */
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,.016) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,.016) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 78%);
+}
+
+main, header, footer{ position:relative; z-index:1; }
+
+::selection{ background: rgba(217,228,236,.25); color:#0B0D10; }
+
+.wrap{ max-width: var(--maxw); margin:0 auto; padding-inline: var(--gut); }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ТИПОГРАФИКА
+   ═══════════════════════════════════════════════════════════════════════ */
+.label{
+  font-family: var(--mono);
+  font-size: .6875rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.label--accent{ color: var(--accent); }
+
+h1,h2,h3{ font-family: var(--disp); font-weight:500; line-height:1.28; letter-spacing:-.005em; margin:0; }
+h2{ font-size: clamp(1.5rem, 3.4vw, 2.05rem); }
+h3{ font-size: clamp(1.06rem, 2.2vw, 1.28rem); letter-spacing:-.008em; }
+
+p{ margin:0 0 1.15em; }
+a{ color: var(--accent); text-decoration:underline; text-decoration-color: rgba(217,228,236,.28); text-underline-offset:3px; }
+a:hover{ text-decoration-color: var(--accent); }
+
+.num{
+  font-family: var(--disp); font-weight:700; font-variant-numeric: tabular-nums;
+  letter-spacing:-.02em; line-height:1.05;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   НАВИГАЦИЯ
+   ═══════════════════════════════════════════════════════════════════════ */
+.nav{
+  position: sticky; top:0; z-index:50;
+  background: rgba(11,13,16,.86);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  border-bottom:1px solid var(--line-soft);
+}
+.nav__in{
+  max-width: var(--maxw); margin:0 auto; padding: .72rem var(--gut);
+  display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;
+}
+.nav__name{
+  font-family: var(--disp); font-weight:500; font-size:.94rem;
+  color: var(--text); letter-spacing:-.01em; white-space:nowrap;
+}
+.nav__name span{ color: var(--faint); }
+.nav__links{ display:flex; gap:1.35rem; margin-left:auto; flex-wrap:wrap; }
+.nav__links a{
+  font-family: var(--mono); font-size:.6875rem; letter-spacing:.1em;
+  text-transform:uppercase; color: var(--muted); transition: color .18s;
+}
+.nav__links a:hover{ color: var(--accent); text-decoration:none; }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════════════════ */
+.hero{ padding: clamp(3.6rem,9vw,6.6rem) 0 clamp(2.4rem,5vw,3.6rem); }
+
+.hero__role{
+  display:inline-flex; align-items:center; gap:.6rem;
+  border:1px solid var(--line); border-radius:999px;
+  padding:.36rem .95rem; margin-bottom:1.9rem;
+  background: var(--surface);
+}
+.hero__role i{
+  width:6px; height:6px; border-radius:50%; background: var(--positive);
+  box-shadow:0 0 0 3px rgba(111,199,180,.16); flex:none;
+}
+
+.hero h1{
+  font-size: clamp(2.3rem, 6.6vw, 4.05rem);
+  font-weight:500; letter-spacing:-.018em; line-height:1.16; margin-bottom:1.3rem;
+}
+.hero h1 em{
+  font-style:normal; color: var(--accent);
+}
+
+.hero__principle{
+  font-size: clamp(1.06rem, 2.1vw, 1.28rem);
+  line-height:1.7; color: var(--text-2);
+  max-width: 62ch; margin-bottom:.85rem;
+  border-left:2px solid var(--accent-dim); padding-left:1.15rem;
+}
+.hero__principle strong{ color: var(--text); font-weight:600; }
+
+.hero__sub{ color: var(--muted); font-size:.98rem; max-width:60ch; margin-bottom:2.6rem; padding-left:1.35rem; line-height:1.7; }
+
+/* ── Портрет на первом экране ────────────────────────────────────────── */
+.hero__grid{
+  display:grid; grid-template-columns: minmax(0,1fr) clamp(220px,26vw,320px);
+  gap: clamp(1.8rem,4.5vw,3.6rem); align-items:start;
+}
+.portrait{ margin:0; }
+.portrait img{
+  display:block; width:100%; aspect-ratio:4/5; object-fit:cover;
+  border:1px solid var(--line); border-radius:12px;
+  filter: saturate(.9) contrast(1.05);
+}
+.portrait figcaption{
+  margin-top:.65rem; font-family:var(--mono); font-size:.66rem;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--faint); line-height:1.6;
+}
+
+/* ── Аватар в контактах ──────────────────────────────────────────────── */
+.contact{ position:relative; }
+.contact__ava{
+  position:absolute; right:0; top:0; width:96px; height:96px;
+  border-radius:50%; object-fit:cover; border:1px solid var(--line);
+  filter: saturate(.92);
+}
+@media (max-width:900px){
+  .hero__grid{ grid-template-columns:1fr; }
+  .portrait{ max-width:340px; }
+}
+@media (max-width:700px){
+  .contact__ava{ position:static; margin-bottom:1.1rem; }
+}
+
+/* ── Панель цифр ─────────────────────────────────────────────────────── */
+.stats{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px,1fr));
+  border:1px solid var(--line); border-radius:14px;
+  background: linear-gradient(180deg, var(--surface), rgba(15,21,29,.55));
+  overflow:hidden;
+}
+.stat{
+  padding: 1.6rem 1.5rem 1.45rem;
+  border-right:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);
+  position:relative;
+}
+.stat::after{
+  content:""; position:absolute; left:0; top:0; width:100%; height:2px;
+  background: linear-gradient(90deg, var(--accent), transparent 70%);
+  opacity:0; transition:opacity .25s;
+}
+.stat:hover::after{ opacity:.7; }
+.stat__n{ font-size: clamp(1.85rem, 4.2vw, 2.6rem); color:var(--text); margin-bottom:.5rem; display:block; }
+.stat__n small{ font-size:.5em; font-weight:500; color: var(--accent-dim); letter-spacing:0; }
+.stat__n small.pre{ color: var(--muted); }
+.stat__t{ font-size:.875rem; color: var(--text-2); line-height:1.5; }
+.stat__d{
+  display:inline-block; margin-top:.55rem;
+  font-family:var(--mono); font-size:.66rem; letter-spacing:.07em;
+  color: var(--positive); text-transform:uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   СЕКЦИИ
+   ═══════════════════════════════════════════════════════════════════════ */
+section{ padding: clamp(3.2rem,7vw,5.4rem) 0; border-top:1px solid var(--line-soft); }
+
+.sec-head{ margin-bottom: clamp(2rem,4.5vw,3.1rem); max-width:66ch; }
+.sec-head .label{ display:block; margin-bottom:.9rem; }
+.sec-head p{ color: var(--text-2); margin:.95rem 0 0; }
+
+/* ── Кейсы ───────────────────────────────────────────────────────────── */
+.case{
+  border:1px solid var(--line); border-radius:14px;
+  background: var(--surface);
+  margin-bottom:1.5rem; overflow:hidden;
+}
+.case__top{
+  display:flex; flex-wrap:wrap; gap:.4rem 1.4rem; align-items:baseline;
+  padding: 1.5rem clamp(1.2rem,3vw,2rem) 1.15rem;
+  border-bottom:1px solid var(--line-soft);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface));
+}
+.case__top h3{ color:var(--text); flex:1 1 260px; }
+.case__meta{
+  font-family:var(--mono); font-size:.7rem; letter-spacing:.09em;
+  text-transform:uppercase; color: var(--muted);
+}
+.case__body{ padding: 1.5rem clamp(1.2rem,3vw,2rem) 1.7rem; }
+.case__ctx{ color: var(--text-2); font-size:.98rem; margin-bottom:1.4rem; }
+
+.metrics{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1px; background: var(--line-soft);
+  border:1px solid var(--line-soft); border-radius:10px; overflow:hidden;
+  margin-bottom:1.5rem;
+}
+.metric{ background: var(--surface-2); padding:1.05rem 1.1rem; }
+.metric b{
+  display:block; font-family:var(--disp); font-weight:700;
+  font-size:1.3rem; color:var(--text); font-variant-numeric:tabular-nums;
+  letter-spacing:-.02em; margin-bottom:.25rem;
+}
+.metric span{ font-size:.79rem; color: var(--muted); line-height:1.42; display:block; }
+
+ul.pts{ list-style:none; margin:0; padding:0; }
+ul.pts li{
+  position:relative; padding-left:1.5rem; margin-bottom:.72rem;
+  color: var(--text-2); font-size:.98rem; line-height:1.62;
+}
+ul.pts li::before{
+  content:""; position:absolute; left:0; top:.62em;
+  width:6px; height:6px; border:1.5px solid var(--accent-dim);
+  border-radius:1px; transform:rotate(45deg);
+}
+ul.pts li strong{ color: var(--text); font-weight:600; }
+
+.nda{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font-family:var(--mono); font-size:.66rem; letter-spacing:.08em;
+  text-transform:uppercase; color: var(--warm);
+  border:1px solid rgba(217,169,106,.28); border-radius:5px;
+  padding:.3rem .6rem; margin-top:1rem;
+}
+
+/* ── Схемы ───────────────────────────────────────────────────────────── */
+.diagrams{ display:grid; gap:1.5rem; }
+.diagram{
+  border:1px solid var(--line); border-radius:14px;
+  background: var(--surface); padding: 1.55rem clamp(1.1rem,3vw,1.9rem) 1.35rem;
+}
+.diagram h3{ margin-bottom:.35rem; color:#fff; }
+.diagram > p{ color: var(--muted); font-size:.9rem; margin-bottom:1.4rem; }
+.diagram svg{ width:100%; height:auto; display:block; }
+.diagram figcaption{
+  font-family:var(--mono); font-size:.66rem; letter-spacing:.07em;
+  text-transform:uppercase; color: var(--faint); margin-top:1.1rem;
+}
+
+/* ── Тексты ──────────────────────────────────────────────────────────── */
+.texts{ display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:1.15rem; }
+.txt{
+  border:1px solid var(--line); border-radius:12px; background: var(--surface);
+  padding:1.4rem 1.4rem 1.25rem; display:flex; flex-direction:column;
+  transition: border-color .2s, transform .2s, background .2s;
+}
+.txt:hover{ border-color: var(--accent-dim); transform:translateY(-3px); background: var(--surface-2); }
+.txt__genre{
+  font-family:var(--mono); font-size:.64rem; letter-spacing:.13em;
+  text-transform:uppercase; color: var(--accent); margin-bottom:.75rem;
+}
+.txt h3{ font-size:1.03rem; margin-bottom:.5rem; }
+.txt p{ font-size:.865rem; color: var(--muted); margin:0 0 1rem; flex:1; }
+.txt__len{
+  font-family:var(--mono); font-size:.68rem; color: var(--faint);
+  letter-spacing:.05em; margin-bottom:.85rem;
+}
+.txt a{ font-size:.865rem; font-weight:500; }
+
+/* ── Видео ───────────────────────────────────────────────────────────── */
+.videos{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.25rem; }
+.vid{
+  border:1px solid var(--line); border-radius:12px; overflow:hidden;
+  background: var(--surface); transition: border-color .2s, transform .2s;
+}
+.vid:hover{ border-color: var(--accent-dim); transform:translateY(-3px); }
+.vid__thumb{ position:relative; display:block; aspect-ratio:16/9; background:#0B1017; overflow:hidden; }
+.vid__thumb img{ width:100%; height:100%; object-fit:cover; display:block; opacity:.86; transition:opacity .25s, transform .4s; }
+.vid:hover .vid__thumb img{ opacity:1; transform:scale(1.035); }
+.vid__play{
+  position:absolute; inset:0; display:grid; place-items:center;
+}
+.vid__play span{
+  width:52px; height:52px; border-radius:50%;
+  background: rgba(8,11,16,.72); border:1px solid rgba(255,255,255,.24);
+  display:grid; place-items:center; backdrop-filter:blur(4px);
+  transition: background .2s, border-color .2s;
+}
+.vid:hover .vid__play span{ background: var(--accent); border-color: var(--accent); }
+.vid__play svg{ width:17px; height:17px; fill:#fff; margin-left:3px; }
+.vid__body{ padding:1.05rem 1.2rem 1.25rem; }
+.vid__body h3{ font-size:.97rem; line-height:1.4; margin-bottom:.45rem; }
+.vid__body span{ font-family:var(--mono); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color: var(--muted); }
+
+/* превью 4:3, прижато к низу: верхняя плашка канала остаётся за кадром */
+.vid--crop .vid__thumb img{ object-position:50% 100%; }
+.vidgroup{ margin-top:2.8rem; }
+.vidgroup__h{ margin-bottom:.5rem; }
+.vidgroup__p{ color:var(--muted); font-size:.95rem; max-width:70ch; margin-bottom:1.4rem; }
+
+/* ── Стек ────────────────────────────────────────────────────────────── */
+.stack{ display:flex; flex-wrap:wrap; gap:.55rem; }
+.tag{
+  font-family:var(--mono); font-size:.75rem; letter-spacing:.02em;
+  border:1px solid var(--line); border-radius:6px;
+  padding:.42rem .8rem; color: var(--text-2); background: var(--surface);
+  transition: border-color .18s, color .18s;
+}
+.tag:hover{ border-color: var(--accent-dim); color: var(--text); }
+.tag--hot{ border-color: rgba(88,174,230,.4); color: var(--accent); background: var(--accent-glow); }
+
+/* ── Контакты ────────────────────────────────────────────────────────── */
+.contact{
+  border:1px solid var(--line); border-radius:16px;
+  background: linear-gradient(135deg, var(--surface-2), var(--surface) 55%);
+  padding: clamp(1.9rem,4.5vw,3rem);
+}
+.contact h2{ margin-bottom:.8rem; }
+.contact > p{ color: var(--text-2); max-width:56ch; }
+.contact__grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:1px; background: var(--line-soft);
+  border:1px solid var(--line-soft); border-radius:10px; overflow:hidden;
+  margin-top:2rem;
+}
+.ci{ background: var(--surface); padding:1.15rem 1.25rem; }
+.ci .label{ display:block; margin-bottom:.42rem; }
+.ci a, .ci span{ color: var(--text); font-size:.98rem; font-weight:500; word-break:break-word; }
+
+/* ── Подвал ──────────────────────────────────────────────────────────── */
+footer{
+  border-top:1px solid var(--line-soft); padding:2.4rem 0 3.4rem;
+  color: var(--faint); font-size:.83rem;
+}
+footer .wrap{ display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   АДАПТИВ
+   ═══════════════════════════════════════════════════════════════════════ */
+@media (max-width: 720px){
+  .nav__links{ gap:1rem; width:100%; margin-left:0; padding-top:.3rem; }
+  .nav__in{ padding-block:.65rem; }
+  .stat{ border-right:none; }
+  .hero__principle, .hero__sub{ padding-left:1rem; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ПЕЧАТЬ → PDF  (Ctrl/Cmd + P → «Сохранить как PDF»)
+   ═══════════════════════════════════════════════════════════════════════ */
+@media print{
+  :root{ --bg:#fff; --surface:#fff; --surface-2:#f6f8fa; --line:#d7dee6;
+         --line-soft:#e6ebf0; --text:#0d141c; --text-2:#33414f;
+         --muted:#5c6b7a; --faint:#8a97a4; --accent:#1a6fa8; --accent-dim:#1a6fa8; }
+  body{ background:#fff; font-size:10.2pt; line-height:1.5; }
+  body::before, .nav{ display:none !important; }
+  section{ padding:14pt 0; break-inside:avoid; }
+  .case, .diagram, .txt, .vid, .contact{ break-inside:avoid; box-shadow:none; }
+  .stat__n, .metric b, h1, h2, h3{ color:#0d141c; }
+  .hero{ padding-top:6pt; }
+  a{ color:#1a6fa8; }
+  a[href^="http"]::after{ content:" (" attr(href) ")"; font-size:.72em; color:#8a97a4; }
+  .vid__thumb, .vid__play{ display:none; }
+  .portrait img{ content:url(img/formal.jpg); aspect-ratio:1; border-radius:10px; }
+  .portrait figcaption{ display:none; }
+  .contact__ava{ display:none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{ transition:none !important; animation:none !important; }
+}
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113233488', 'ym');
+
+    ym(113233488, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113233488" style="position:absolute; left:-9999px;" alt="" /></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     НАВИГАЦИЯ
+     ════════════════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__in">
+    <div class="nav__name">Юрий Макаров <span>/ руководитель контента</span></div>
+    <div class="nav__links">
+      <a href="#cases">Кейсы</a>
+      <a href="#systems">Системы</a>
+      <a href="#writing">Тексты</a>
+      <a href="#video">Видео</a>
+      <a href="#stack">Стек</a>
+      <a href="#contact">Контакты</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     ПЕРВЫЙ ЭКРАН
+     ════════════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="wrap">
+  <div class="hero__grid">
+    <div class="hero__col">
+
+    <div class="hero__role">
+      <i></i>
+      <span class="label" style="letter-spacing:.13em">Открыт к предложениям · удалённо · оплата в ₽</span>
+    </div>
+
+    <h1>Руководитель<br>контента. <em>8+ лет.</em></h1>
+
+    <p class="hero__principle">
+      Контент производит <strong>заявки и деньги, а не лайки</strong>.
+      Система должна пережить мой отпуск и мой уход — <strong>оба раза так и вышло</strong>.
+    </p>
+    <p class="hero__sub">
+      Санкт-Петербург. Ведёт цикл целиком: стратегия → годовой план → производство → дистрибуция →
+      аналитика → защита перед собственником.
+    </p>
+    </div>
+
+    <figure class="portrait">
+      <img src="img/night.jpg" alt="Юрий Макаров — выездная съёмка в Санкт-Петербурге">
+      <figcaption>Санкт-Петербург · выездная съёмка · свой комплект Blackmagic 2.5K</figcaption>
+    </figure>
+  </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat__n num">35,1<small>K</small></span>
+        <span class="stat__t">подписчиков YouTube-канала, который я вёл целиком</span>
+        <span class="stat__d">13,7M просмотров · 1 666 роликов</span>
+      </div>
+      <div class="stat">
+        <span class="stat__n num">3<small>/мес</small></span>
+        <span class="stat__t">контракта из Telegram-канала на продукте за десятки тысяч долларов</span>
+        <span class="stat__d">было ≈1 раз в несколько месяцев</span>
+      </div>
+      <div class="stat">
+        <span class="stat__n num"><small class="pre">800K →</small>3M</span>
+        <span class="stat__t">уникальных посетителей в месяц по сайтам медиагруппы</span>
+        <span class="stat__d">LiveInternet: 250 → 115 место</span>
+      </div>
+      <div class="stat">
+        <span class="stat__n num">0</span>
+        <span class="stat__t">срывов регулярности за 1,5 года при 2–3 роликах в неделю и еженедельном эфире</span>
+        <span class="stat__d">и ни одного звонка мне в отпуске</span>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     КЕЙСЫ
+     ════════════════════════════════════════════════════════════════════ -->
+<section id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label label--accent">01 — Кейсы</span>
+      <h2>Три системы, которые я построил</h2>
+      <p>Часть проектов под NDA: лиды, выручку и цены не публикую — и «про запас» никакой скрытой
+         аналитики нет: всё, что можно показать, уже на этой странице. На интервью детально
+         разбираю процесс и решения.</p>
+    </div>
+
+    <!-- ── Кейс 1 ─────────────────────────────────────────────────────── -->
+    <article class="case">
+      <div class="case__top">
+        <h3>Shamayev Business Law</h3>
+        <span class="case__meta">Июнь 2024 — ноябрь 2025 · 1 г. 6 мес.</span>
+      </div>
+      <div class="case__body">
+        <p class="case__ctx">
+          <strong style="color:var(--text)">Контент-менеджер → и.о. руководителя отдела маркетинга.</strong>
+          Бизнес-иммиграция в США (O-1, EB-1A, EB-5). Средний контракт — десятки тысяч долларов,
+          решение зреет месяцами и строится на доверии к экспертизе. Весь русскоязычный контент
+          компании шёл через меня.
+        </p>
+
+        <div class="metrics">
+          <div class="metric"><b>35,1K</b><span>подписчиков YouTube</span></div>
+          <div class="metric"><b>13,7M</b><span>просмотров</span></div>
+          <div class="metric"><b>1 666</b><span>роликов выпущено</span></div>
+          <div class="metric"><b>30–40%</b><span>open rate почтовых баз</span></div>
+          <div class="metric"><b>1,5 года</b><span>регулярности без срывов</span></div>
+          <div class="metric"><b>≈40%</b><span>контрактов давал YouTube-Ru — основная площадка продаж</span></div>
+        </div>
+
+        <ul class="pts">
+          <li><strong>Telegram-канал «Одной ногой в США»</strong> (5,1 тыс.) перестроен из присутствия бренда
+              в канал заявок: поток вырос примерно с 1 контракта раз в несколько месяцев
+              до устойчивых 3 в месяц.</li>
+          <li><strong>YouTube целиком:</strong> 2–3 ролика в неделю плюс еженедельный эфир.
+              Цикл: тема → сценарий → подготовка собственника → ТЗ монтажёрам → приёмка → публикация.</li>
+          <li><strong>YouTube-Ru — основная площадка продаж:</strong> на неё приходилось ≈40% контрактов;
+              вёл её я.</li>
+          <li><strong>Контент-план на отдел:</strong> составлял и защищал вместе с двумя коллегами;
+              конвейер брал темы из него — для всех площадок, не только моих.</li>
+          <li><strong>E-mail с нуля до автоматизации:</strong> базы ~10–20 тыс. RU и столько же EN,
+              разовые рассылки заменены цепочками — реактивация остывшей базы, вебинарные воронки.
+              Лендинги Tilda/WordPress, сквозная автоматизация через Zapier.</li>
+          <li><strong>С февраля 2025 — функции руководителя:</strong> контент-стратегия и годовой план
+              с weekly-темами и milestone, защита перед собственником, планирование выхода на ЛатАм.</li>
+          <li><strong>Управлял продакшном:</strong> дизайнер в штате, 2–3 монтажника-подрядчика, таргетолог;
+              бюджет рекламы в Telegram ~$500/мес; написал внутренний регламент Telegram-рекламы.</li>
+          <li><strong>Системный след:</strong> после меня в компании работают принятая стратегия,
+              годовой план, регламент и узнаваемый стиль монтажа.</li>
+        </ul>
+
+        <span class="nda">Лиды, выручка и цены — под NDA · динамика и публичные метрики открыты</span>
+      </div>
+    </article>
+
+    <!-- ── Кейс 2 ─────────────────────────────────────────────────────── -->
+    <article class="case">
+      <div class="case__top">
+        <h3>Медиагруппа «Патриот» — шеф-редактор</h3>
+        <span class="case__meta">Январь 2020 — июль 2023 · 3 г. 7 мес.</span>
+      </div>
+      <div class="case__body">
+        <p class="case__ctx">
+          Новостные ресурсы медиагруппы. Собрал и вырастил собственную смену с нуля, построил стандарты
+          и редакционную аналитику. Ушёл вместе с группой: холдинг ликвидирован, доработал до последнего дня.
+        </p>
+
+        <div class="metrics">
+          <div class="metric"><b>800K → 3M</b><span>уникальных в месяц, 2020 → 2023</span></div>
+          <div class="metric"><b>250 → 115</b><span>место в LiveInternet, в пике топ-80</span></div>
+          <div class="metric"><b>6–8 + 2</b><span>авторов и моих заместителя</span></div>
+          <div class="metric"><b>~50%</b><span>обновлений состава — мои решения</span></div>
+        </div>
+
+        <ul class="pts">
+          <li><strong>Построил стандарты:</strong> ToV, регламенты написания, регулярные разборы текстов
+              и спецтекстов.</li>
+          <li><strong>Редакционная аналитика как база планирования:</strong> CTR, качество заголовков
+              и ссылок, читательский спрос. Темы выбирались по данным, а не по вкусу.</li>
+          <li><strong>Самообслуживающаяся система:</strong> смена работала без единого звонка мне в отпуске.
+              Задача «уходишь — система стоит» выполнена дважды: в отпуск и при моём уходе.</li>
+          <li><strong>На WordPress заставил разработчиков починить SEO-ядро</strong> — мета-теги
+              заработали по-настоящему.</li>
+          <li><strong>Предвыборные и пиковые периоды — без срывов выпуска.</strong>
+              Перевод во вторую редакцию — решение руководства после сравнения качества двух смен.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ── Кейс 3 ─────────────────────────────────────────────────────── -->
+    <article class="case">
+      <div class="case__top">
+        <h3>«Пятый канал» и АО «Технопарк Санкт-Петербурга»</h3>
+        <span class="case__meta">2017–2019 · авг. 2023 — февр. 2024</span>
+      </div>
+      <div class="case__body">
+        <div class="metrics">
+          <div class="metric"><b>28 / мес</b><span>выпусков лично, сменный график 7/7 по 12 часов</span></div>
+          <div class="metric"><b>2+ года</b><span>без единого срыва выпуска</span></div>
+          <div class="metric"><b>30–50 стр.</b><span>буклет парка на RU и EN</span></div>
+        </div>
+
+        <ul class="pts">
+          <li><strong>«Пятый канал»:</strong> пишущий продюсер международного отдела выпуска новостей.
+              Сменный график 7/7 по 12 часов, 2 выпуска в смену (05:00 и 09:00), изначально три —
+              ночной в 24:00 позже убрали. Утренний блок самый ответственный: к нему накапливается
+              вся ночная повестка США.</li>
+          <li><strong>Английский как ежедневный рабочий инструмент:</strong> Reuters и AP, NBC/BBC/CNN.
+              Перевёл с голоса «на лету» сложное интервью учёного ЦЕРНа, когда с ним не справился
+              автор сюжета. Съёмки в патриархии, синхронист на ЧМ-2018.</li>
+          <li><strong>Технопарк:</strong> привлёк федеральные СМИ — съёмки Первого канала на мероприятиях.
+              Медиа-ядро сайта на WordPress со стратегией «вечнозелёных» материалов, Яндекс.Вебмастер.</li>
+          <li><strong>Выставки на Ленэкспо полного цикла</strong> — от настройки звука и света до работы
+              у стенда: лично представлял разработки резидентов, вёл переговоры с бизнес-ангелами.
+              Съёмка и монтаж питчей «Ингрии» каждые ~2 недели.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     СИСТЕМЫ
+     ════════════════════════════════════════════════════════════════════ -->
+<section id="systems">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label label--accent">02 — Системы</span>
+      <h2>Что именно я строю</h2>
+      <p>Работодатель покупает не прошлый график, а способность построить такой же у него.
+         Ниже — схемы процессов, которые я собирал. Это моя методология, а не чужие данные.</p>
+    </div>
+
+    <div class="diagrams">
+
+      <!-- ── Конвейер ─────────────────────────────────────────────────── -->
+      <figure class="diagram">
+        <h3>Конвейер производства контента</h3>
+        <p>Так выглядел выпуск 1 666 роликов без единого срыва регулярности за полтора года.</p>
+        <svg viewBox="0 0 1000 250" role="img" aria-label="Схема конвейера производства контента: тема, сценарий, подготовка эксперта, ТЗ монтажёрам, приёмка, публикация, UTM-аналитика">
+          <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#2B6E9C"/>
+            </marker>
+          </defs>
+          <g font-family="'JetBrains Mono',monospace" font-size="13" text-anchor="middle">
+            <!-- ряд 1 -->
+            <g>
+              <rect x="14" y="42" width="140" height="62" rx="9" fill="#131B25" stroke="#1D2836"/>
+              <text x="84" y="70" fill="#E3EAF2">Тема</text>
+              <text x="84" y="88" fill="#6E7F92" font-size="10.5">план отдела</text>
+            </g>
+            <line x1="158" y1="73" x2="196" y2="73" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar)"/>
+            <g>
+              <rect x="200" y="42" width="140" height="62" rx="9" fill="#131B25" stroke="#1D2836"/>
+              <text x="270" y="70" fill="#E3EAF2">Сценарий</text>
+              <text x="270" y="88" fill="#6E7F92" font-size="10.5">структура, хук</text>
+            </g>
+            <line x1="344" y1="73" x2="382" y2="73" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar)"/>
+            <g>
+              <rect x="386" y="42" width="176" height="62" rx="9" fill="#131B25" stroke="#1D2836"/>
+              <text x="474" y="70" fill="#E3EAF2">Подготовка эксперта</text>
+              <text x="474" y="88" fill="#6E7F92" font-size="10.5">к записи</text>
+            </g>
+            <line x1="566" y1="73" x2="604" y2="73" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar)"/>
+            <g>
+              <rect x="608" y="42" width="150" height="62" rx="9" fill="#131B25" stroke="#1D2836"/>
+              <text x="683" y="70" fill="#E3EAF2">ТЗ монтажёрам</text>
+              <text x="683" y="88" fill="#6E7F92" font-size="10.5">срок, референсы</text>
+            </g>
+            <!-- переход вниз -->
+            <path d="M758,73 L820,73 L820,150 L758,150" fill="none" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar)"/>
+            <!-- ряд 2 (справа налево) -->
+            <g>
+              <rect x="608" y="119" width="150" height="62" rx="9" fill="#131B25" stroke="#1D2836"/>
+              <text x="683" y="147" fill="#E3EAF2">Приёмка</text>
+              <text x="683" y="165" fill="#6E7F92" font-size="10.5">качество, правки</text>
+            </g>
+            <line x1="604" y1="150" x2="566" y2="150" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar)"/>
+            <g>
+              <rect x="386" y="119" width="176" height="62" rx="9" fill="#131B25" stroke="#1D2836"/>
+              <text x="474" y="147" fill="#E3EAF2">Публикация</text>
+              <text x="474" y="165" fill="#6E7F92" font-size="10.5">площадки, UTM</text>
+            </g>
+            <line x1="382" y1="150" x2="344" y2="150" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar)"/>
+            <g>
+              <rect x="164" y="119" width="176" height="62" rx="9" fill="#0F1D2A" stroke="#2B6E9C"/>
+              <text x="252" y="147" fill="#58AEE6">Аналитика</text>
+              <text x="252" y="165" fill="#6E7F92" font-size="10.5">возврат в план тем</text>
+            </g>
+            <!-- обратная связь -->
+            <path d="M252,119 L252,20 M84,20 L84,38" fill="none" stroke="#1D2836" stroke-width="1.4"
+                  stroke-dasharray="5 4" marker-end="url(#ar)"/>
+            <text x="430" y="15" fill="#4A5867" font-size="11" letter-spacing="1.2">ОБРАТНАЯ СВЯЗЬ: ЧТО ЗАЛЕТЕЛО — В СЛЕДУЮЩИЙ ПЛАН</text>
+          </g>
+          <text x="14" y="228" fill="#4A5867" font-family="'JetBrains Mono',monospace" font-size="11"
+                letter-spacing="1">2–3 РОЛИКА В НЕДЕЛЮ + ЕЖЕНЕДЕЛЬНЫЙ ЭФИР · 1,5 ГОДА · 0 СРЫВОВ</text>
+        </svg>
+        <figcaption>Shamayev Business Law · 2024–2025</figcaption>
+      </figure>
+
+      <!-- ── Редакция ─────────────────────────────────────────────────── -->
+      <figure class="diagram">
+        <h3>Редакционная смена, которая стоит без меня</h3>
+        <p>Структура, при которой смена работала без единого звонка руководителю в отпуске.</p>
+        <svg viewBox="0 0 1000 260" role="img" aria-label="Схема редакционной смены: шеф-редактор, два заместителя, 6-8 авторов и 1-2 корректора">
+          <g font-family="'JetBrains Mono',monospace" text-anchor="middle">
+            <rect x="380" y="24" width="240" height="58" rx="9" fill="#0F1D2A" stroke="#2B6E9C"/>
+            <text x="500" y="49" font-size="14" fill="#58AEE6">Шеф-редактор</text>
+            <text x="500" y="68" font-size="10.5" fill="#6E7F92">стандарты · найм · разборы</text>
+
+            <line x1="500" y1="82" x2="500" y2="104" stroke="#2B6E9C" stroke-width="1.6"/>
+            <line x1="300" y1="104" x2="700" y2="104" stroke="#2B6E9C" stroke-width="1.6"/>
+            <line x1="300" y1="104" x2="300" y2="126" stroke="#2B6E9C" stroke-width="1.6"/>
+            <line x1="700" y1="104" x2="700" y2="126" stroke="#2B6E9C" stroke-width="1.6"/>
+
+            <rect x="190" y="126" width="220" height="54" rx="9" fill="#131B25" stroke="#1D2836"/>
+            <text x="300" y="150" font-size="13" fill="#E3EAF2">Заместитель №1</text>
+            <text x="300" y="168" font-size="10.5" fill="#6E7F92">контроль выпуска</text>
+
+            <rect x="590" y="126" width="220" height="54" rx="9" fill="#131B25" stroke="#1D2836"/>
+            <text x="700" y="150" font-size="13" fill="#E3EAF2">Заместитель №2</text>
+            <text x="700" y="168" font-size="10.5" fill="#6E7F92">климат и качество</text>
+
+            <line x1="300" y1="180" x2="300" y2="200" stroke="#1D2836" stroke-width="1.4"/>
+            <line x1="700" y1="180" x2="700" y2="200" stroke="#1D2836" stroke-width="1.4"/>
+
+            <rect x="150" y="200" width="300" height="46" rx="8" fill="#0F151D" stroke="#172029"/>
+            <text x="300" y="228" font-size="12.5" fill="#A8B6C6">3–4 автора</text>
+
+            <rect x="550" y="200" width="300" height="46" rx="8" fill="#0F151D" stroke="#172029"/>
+            <text x="700" y="228" font-size="12.5" fill="#A8B6C6">3–4 автора + 1–2 корректора</text>
+          </g>
+        </svg>
+        <figcaption>Медиагруппа «Патриот» · 2020–2023 · ~50% обновлений состава — мои решения</figcaption>
+      </figure>
+
+      <!-- ── E-mail ───────────────────────────────────────────────────── -->
+      <figure class="diagram">
+        <h3>E-mail: от разовых рассылок к автоматическим цепочкам</h3>
+        <p>То, что дало open rate 30–40% на базах в десятки тысяч адресов.</p>
+        <svg viewBox="0 0 1000 210" role="img" aria-label="Схема e-mail автоматизации: базы, сегментация, цепочки, конверсия">
+          <defs>
+            <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#2B6E9C"/>
+            </marker>
+          </defs>
+          <g font-family="'JetBrains Mono',monospace" text-anchor="middle">
+            <rect x="16" y="60" width="196" height="80" rx="9" fill="#131B25" stroke="#1D2836"/>
+            <text x="114" y="90" font-size="13.5" fill="#E3EAF2">Базы MailChimp</text>
+            <text x="114" y="110" font-size="11" fill="#6E7F92">~10–20K RU</text>
+            <text x="114" y="126" font-size="11" fill="#6E7F92">~10–20K EN</text>
+
+            <line x1="216" y1="100" x2="256" y2="100" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar2)"/>
+
+            <rect x="260" y="60" width="196" height="80" rx="9" fill="#131B25" stroke="#1D2836"/>
+            <text x="358" y="90" font-size="13.5" fill="#E3EAF2">Сегментация</text>
+            <text x="358" y="110" font-size="11" fill="#6E7F92">теплота · источник</text>
+            <text x="358" y="126" font-size="11" fill="#6E7F92">· язык</text>
+
+            <line x1="460" y1="100" x2="500" y2="100" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar2)"/>
+
+            <rect x="504" y="42" width="220" height="116" rx="9" fill="#131B25" stroke="#1D2836"/>
+            <text x="614" y="70" font-size="13.5" fill="#E3EAF2">Цепочки (Zapier)</text>
+            <text x="614" y="94" font-size="11" fill="#6E7F92">· реактивация остывшей</text>
+            <text x="614" y="112" font-size="11" fill="#6E7F92">· вебинарная воронка</text>
+            <text x="614" y="130" font-size="11" fill="#6E7F92">· прогрев до сделки</text>
+
+            <line x1="728" y1="100" x2="768" y2="100" stroke="#2B6E9C" stroke-width="1.6" marker-end="url(#ar2)"/>
+
+            <rect x="772" y="60" width="212" height="80" rx="9" fill="#0F1D2A" stroke="#2B6E9C"/>
+            <text x="878" y="92" font-size="20" fill="#58AEE6" font-family="'Unbounded',sans-serif" font-weight="700">30–40%</text>
+            <text x="878" y="116" font-size="10.5" fill="#6E7F92">OPEN RATE</text>
+
+            <text x="16" y="188" font-size="11" fill="#4A5867" letter-spacing="1"
+                  text-anchor="start">ДО: РАЗОВЫЕ РАССЫЛКИ → ПОСЛЕ: АВТОМАТИЧЕСКИЕ ЦЕПОЧКИ + ВОРОНКА В HUBSPOT</text>
+          </g>
+        </svg>
+        <figcaption>Shamayev Business Law · лендинги Tilda / WordPress</figcaption>
+      </figure>
+
+      <!-- ── Рост ─────────────────────────────────────────────────────── -->
+      <figure class="diagram">
+        <h3>Рост аудитории медиагруппы</h3>
+        <p>Уникальные посетители в месяц по сайтам группы. Индекс 2020 года = 100.</p>
+        <svg viewBox="0 0 1000 260" role="img" aria-label="График роста аудитории: 2020 год 800 тысяч, 2022 год более миллиона, 2023 год 2,5-3 миллиона">
+          <g font-family="'JetBrains Mono',monospace">
+            <!-- сетка -->
+            <g stroke="#172029" stroke-width="1">
+              <line x1="70" y1="40"  x2="960" y2="40"/>
+              <line x1="70" y1="90"  x2="960" y2="90"/>
+              <line x1="70" y1="140" x2="960" y2="140"/>
+              <line x1="70" y1="190" x2="960" y2="190"/>
+            </g>
+            <line x1="70" y1="215" x2="960" y2="215" stroke="#1D2836" stroke-width="1.4"/>
+            <g font-size="10.5" fill="#4A5867" text-anchor="end">
+              <text x="60" y="44">3M</text>
+              <text x="60" y="94">2M</text>
+              <text x="60" y="144">1M</text>
+              <text x="60" y="194">0,5M</text>
+            </g>
+            <!-- столбцы: 800K → 1M → 2.75M ; шкала: 3M = y40, 0 = y215 -->
+            <g>
+              <rect x="150" y="162" width="150" height="53" rx="4" fill="#1E3446"/>
+              <rect x="430" y="148" width="150" height="67" rx="4" fill="#2A5474"/>
+              <rect x="710" y="32"  width="150" height="183" rx="4" fill="#58AEE6" opacity=".9"/>
+            </g>
+            <g font-size="15" fill="#E3EAF2" text-anchor="middle" font-family="'Unbounded',sans-serif" font-weight="700">
+              <text x="225" y="152">800K</text>
+              <text x="505" y="138">1M+</text>
+              <text x="785" y="22" fill="#58AEE6">2,5–3M</text>
+            </g>
+            <g font-size="12" fill="#6E7F92" text-anchor="middle">
+              <text x="225" y="238">2020</text>
+              <text x="505" y="238">2022</text>
+              <text x="785" y="238">2023</text>
+            </g>
+            <text x="70" y="14" font-size="11" fill="#4A5867" letter-spacing="1.2"
+                  >LIVEINTERNET: 250 → 115 МЕСТО · В ПИКЕ ТОП-80 — РЕКОРД ИСТОРИИ САЙТОВ ГРУППЫ</text>
+          </g>
+        </svg>
+        <figcaption>Медиагруппа «Патриот» · 2020–2023</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     ОТКРЫТЫЕ ТЕКСТЫ
+     ════════════════════════════════════════════════════════════════════ -->
+<section id="writing">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label label--accent">03 — Открытые тексты</span>
+      <h2>Пишу сам, когда надо</h2>
+      <p>40+ тыс. знаков открытых текстов: лонгриды для медиа «Минутная История», продающие
+         и обучающие тексты Shamayev Business Law (Telegram и Medium, EN), пресс-тексты
+         о резидентах Технопарка и ghostwriting-аналитика времён медиагруппы.
+         Все ссылки открытые и проверяемые.</p>
+    </div>
+
+        <div class="vidgroup" style="margin-top:0">
+      <h3 class="vidgroup__h">Shamayev Business Law — продающие и обучающие тексты</h3>
+      <p class="vidgroup__p">Telegram (RU) и Medium (EN): посты, которые снимают панику и продают разбор кейса;
+       статьи, закреплённые в аккаунте.</p>
+    <div class="texts">
+<article class="txt">
+        <div class="txt__genre">Medium · EN · storytelling</div>
+        <h3>One Mistake That Nearly Cost an Entrepreneur a U.S. Visa</h3>
+        <p>Кейс в нарративе: ошибка → цена → вывод. Закреплён в аккаунте —
+           значит, работал.</p>
+        <div class="txt__len">апрель 2025 · EN</div>
+        <a href="https://medium.com/@shamayevbusinesslaw/one-mistake-that-nearly-cost-an-entrepreneur-a-u-s-visa-ae61b488e430" target="_blank" rel="noopener">medium.com ↗</a>
+      </article>
+<article class="txt">
+        <div class="txt__genre">Medium · EN · трендовая тема</div>
+        <h3>How IT and AI Specialists Can Get a Green Card and Move to the U.S.</h3>
+        <p>Талант-визы через бум IT/AI: повестка, скрещённая с продуктом, —
+           аудитория, за которую платят.</p>
+        <div class="txt__len">май 2025 · EN</div>
+        <a href="https://medium.com/@shamayevbusinesslaw/how-it-and-ai-specialists-can-get-a-green-card-and-move-to-the-u-s-cf908c7f6fa8" target="_blank" rel="noopener">medium.com ↗</a>
+      </article>
+<article class="txt">
+        <div class="txt__genre">Telegram · пост-разбор</div>
+        <h3>RFE: что это и как его избежать</h3>
+        <p>Рабочий пост канала юрфирмы: снять панику → термин → причины →
+           алгоритм → CTA на разбор кейса.</p>
+        <div class="txt__len">12.09.2024 · Shamayev Business Law</div>
+        <a href="https://t.me/shamayev_business_law/2162" target="_blank" rel="noopener">читать ↗</a>
+      </article>
+<article class="txt">
+        <div class="txt__genre">Telegram · обучающий пост</div>
+        <h3>Виза EB-2 NIW: переезд в США для исследователей</h3>
+        <p>Сложная визовая программа одним постом: выгоды, критерии отбора
+           и честное предупреждение о сложности процесса.</p>
+        <div class="txt__len">18.07.2024 · Shamayev Business Law</div>
+        <a href="https://t.me/shamayev_business_law/2035" target="_blank" rel="noopener">читать ↗</a>
+      </article>
+    </div>
+    </div>
+
+    <div class="vidgroup">
+      <h3 class="vidgroup__h">Медиа «Минутная История» — лонгриды в трёх жанрах</h3>
+      <p class="vidgroup__p">Telegram, 16,3 тыс. подписчиков: аналитический портрет, эпический лонгрид,
+       листикл и юмор.</p>
+    <div class="texts">
+<article class="txt">
+        <div class="txt__genre">Аналитический портрет</div>
+        <h3>«Хромой дьявол»: Талейран</h3>
+        <p>Как человек, которого ненавидели все современники, пережил четыре режима
+           и остался при власти.</p>
+        <div class="txt__len">≈ 4 000 знаков</div>
+        <a href="https://xn--80apbaqhaksiheh5og.xn--p1ai/stati/hromoj-dyavol/" target="_blank" rel="noopener">минутнаяистория.рф ↗</a>
+      </article>
+<article class="txt">
+        <div class="txt__genre">Эпический лонг · 2 части</div>
+        <h3>«Хребты безумия»: Суворов в Альпах</h3>
+        <p>Переход через Альпы как история о логистике, голоде и решениях,
+           которые нельзя отложить.</p>
+        <div class="txt__len">7 800 знаков</div>
+        <a href="https://t.me/MinuteHistoryChanel/1251" target="_blank" rel="noopener">часть 1 ↗</a>
+        &nbsp;·&nbsp;
+        <a href="https://t.me/MinuteHistoryChanel/1254" target="_blank" rel="noopener">часть 2 ↗</a>
+      </article>
+<article class="txt">
+        <div class="txt__genre">Листикл</div>
+        <h3>Топ-5 исторических аниме</h3>
+        <p>Разбор того, где аниме врёт истории, а где оказывается
+           точнее учебника.</p>
+        <div class="txt__len">3 200+ знаков</div>
+        <a href="https://t.me/MinuteHistoryChanel/1454" target="_blank" rel="noopener">начало ↗</a>
+        &nbsp;·&nbsp;
+        <a href="https://t.me/MinuteHistoryChanel/1457" target="_blank" rel="noopener">продолжение ↗</a>
+      </article>
+<article class="txt">
+        <div class="txt__genre">Юмор</div>
+        <h3>Суворов: король мемов XVIII века</h3>
+        <p>Как полководец стал народным персонажем — и почему этот образ
+           работает до сих пор.</p>
+        <div class="txt__len">4 050 знаков</div>
+        <a href="https://t.me/MinuteHistoryChanel/1219" target="_blank" rel="noopener">читать ↗</a>
+      </article>
+    </div>
+    </div>
+
+    <div class="vidgroup">
+      <h3 class="vidgroup__h">АО «Технопарк Санкт-Петербурга» — пресс-тексты о резидентах</h3>
+      <p class="vidgroup__p">Новости и интервью о резидентах: робототехника и беспилотная авиация.
+       Даты постов — публичные, по t.me.</p>
+    <div class="texts">
+      <article class="txt">
+        <div class="txt__genre">Новости резидента</div>
+        <h3>«РОББО» открыла классы робототехники на Северном Кавказе</h3>
+        <p>Пилот в семи регионах, привязанный к новому школьному предмету «Технология»:
+           повестка образования + продукт резидента.</p>
+        <div class="txt__len">06.09.2024 · ≈ 1 800 знаков</div>
+        <a href="https://t.me/spbtech/3411" target="_blank" rel="noopener">читать ↗</a>
+      </article>
+      <article class="txt">
+        <div class="txt__genre">Новости испытаний</div>
+        <h3>«Колибри» успешно провела испытания по доставке грузов</h3>
+        <p>Техническая тема человеческим языком: автономные режимы полёта,
+           QR-посадка, грант Фонда НТИ.</p>
+        <div class="txt__len">06.02.2026 · ≈ 1 100 знаков</div>
+        <a href="https://t.me/spbtech/6100" target="_blank" rel="noopener">читать ↗</a>
+      </article>
+      <article class="txt">
+        <div class="txt__genre">Интервью</div>
+        <h3>Автономное будущее: интервью с компанией Wheelies</h3>
+        <p>Интервью резидента НПЦ БАС: продукт через отрасли — сельское хозяйство,
+           нефтегаз, логистика, работа без GPS.</p>
+        <div class="txt__len">01.07.2026 · ≈ 1 400 знаков</div>
+        <a href="https://t.me/spbtech/6845" target="_blank" rel="noopener">читать ↗</a>
+      </article>
+    </div>
+    </div>
+
+    <div class="vidgroup">
+      <h3 class="vidgroup__h">Ghostwriting — аналитика под именем редактора</h3>
+      <p class="vidgroup__p">Лонгрид для гос-СМИ времён медиагруппы. Подпись чужая — текст мой.</p>
+    <div class="texts">
+<article class="txt">
+        <div class="txt__genre">Ghostwriting · лонг-аналитика</div>
+        <h3>«Путину нужно задуматься о самоликвидации РФ»: как устроены секты «граждан СССР»</h3>
+        <p>Разоблачительный лонгрид об экстремистской секте (с пометкой о признании).
+           Кричащий заголовок — цитата риторики самих сектантов. Опубликовано под именем
+           редактора: свои имена нам было запрещено использовать.</p>
+        <div class="txt__len">ноябрь 2021 · polit.info · Web Archive</div>
+        <a href="https://web.archive.org/web/20211113001209/https://polit.info/560616-putinu-nuzhno-zadumatsya-o-samolikvidacii-rf-kak-ustroeny-sekty-grazhdan-sssr" target="_blank" rel="noopener">архив ↗</a>
+      </article>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     ВИДЕО
+     ════════════════════════════════════════════════════════════════════ -->
+<section id="video">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label label--accent">04 — Видео</span>
+      <h2>Топ-ролики периода — и выездная бригада в одном лице</h2>
+      <p>Сначала цифры канала: самые просматриваемые ролики периода, когда я вёл Shamayev Business Law.
+         Затем ремесло: собственная съёмка и монтаж, свой комплект Blackmagic.</p>
+    </div>
+
+    <div class="vidgroup" style="margin-top:0">
+      <h3 class="vidgroup__h">Shamayev Business Law — самые просматриваемые ролики периода, когда я вёл канал</h3>
+      <p class="vidgroup__p">Июнь 2024 — ноябрь 2025 · 1 666 роликов: 2–3 в неделю плюс еженедельный эфир, ноль срывов.
+         Ниже — топ просмотров моего периода: даты публикации и текущее число просмотров.</p>
+      <div class="videos">
+        <article class="vid vid--crop">
+          <a class="vid__thumb" href="https://www.youtube.com/watch?v=hvrfnhX-Pdo" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/hvrfnhX-Pdo/hqdefault.jpg" alt="Как талантливому специалисту иммигрировать в США" loading="lazy">
+            <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span></span>
+          </a>
+          <div class="vid__body">
+            <h3>Как талантливому специалисту иммигрировать в США?</h3>
+            <span>75K просмотров · 08.11.2024</span>
+          </div>
+        </article>
+
+        <article class="vid vid--crop">
+          <a class="vid__thumb" href="https://www.youtube.com/watch?v=Qhl8znW8fSE" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/Qhl8znW8fSE/hqdefault.jpg" alt="Готовы ли вы к визе таланта: как оценить шансы на O-1, EB-1A и EB-2 NIW" loading="lazy">
+            <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span></span>
+          </a>
+          <div class="vid__body">
+            <h3>Готовы ли вы к визе таланта? Как оценить шансы на O-1, EB-1A и EB-2 NIW</h3>
+            <span>46K просмотров · 04.12.2024</span>
+          </div>
+        </article>
+
+        <article class="vid vid--crop">
+          <a class="vid__thumb" href="https://www.youtube.com/watch?v=I6gT9Oo3pag" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/I6gT9Oo3pag/hqdefault.jpg" alt="Три реальных способа переехать в США вместо лотереи грин-карт" loading="lazy">
+            <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span></span>
+          </a>
+          <div class="vid__body">
+            <h3>Забудьте о лотерее грин-карт 2025: 3 реальных способа переехать в США сегодня</h3>
+            <span>43K просмотров · 02.04.2025</span>
+          </div>
+        </article>
+
+        <article class="vid vid--crop">
+          <a class="vid__thumb" href="https://www.youtube.com/watch?v=YrzHdKT4Ch0" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/YrzHdKT4Ch0/hqdefault.jpg" alt="Crossing the U.S. border illegally: the truth about costs and risks, legal alternatives" loading="lazy">
+            <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span></span>
+          </a>
+          <div class="vid__body">
+            <h3>Crossing the U.S. Border Illegally: the Truth About Costs and Risks. Legal Work Alternatives</h3>
+            <span>1,2M просмотров · 02.07.2025</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="vidgroup">
+      <h3 class="vidgroup__h">АО «Технопарк Санкт-Петербурга» — съёмка и монтаж</h3>
+      <p class="vidgroup__p">Собственный комплект: Blackmagic Cinema Camera 2.5K, свет, петличная и студийная запись звука.</p>
+    <div class="videos">
+      <article class="vid">
+        <a class="vid__thumb" href="https://www.youtube.com/watch?v=wXeuUby6V4s" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/wXeuUby6V4s/maxresdefault.jpg" alt="Технопарк Санкт-Петербурга на форуме Российский промышленник, 2023" loading="lazy"
+               onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/wXeuUby6V4s/hqdefault.jpg'">
+          <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </a>
+        <div class="vid__body">
+          <h3>«Технопарк Санкт-Петербурга» на форуме «Российский промышленник» — 2023</h3>
+          <span>Съёмка · монтаж</span>
+        </div>
+      </article>
+
+      <article class="vid">
+        <a class="vid__thumb" href="https://www.youtube.com/watch?v=1FJic0aL104" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/1FJic0aL104/maxresdefault.jpg" alt="Startup Lynch: финал летнего сезона" loading="lazy"
+               onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/1FJic0aL104/hqdefault.jpg'">
+          <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </a>
+        <div class="vid__body">
+          <h3>Startup Lynch: яркий финал летнего сезона</h3>
+          <span>Съёмка · монтаж</span>
+        </div>
+      </article>
+
+      <article class="vid">
+        <a class="vid__thumb" href="https://www.youtube.com/watch?v=bwGHXeJAWMw" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/bwGHXeJAWMw/maxresdefault.jpg" alt="Технопарк на Баркемпе: лучшие моменты" loading="lazy"
+               onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/bwGHXeJAWMw/hqdefault.jpg'">
+          <span class="vid__play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </a>
+        <div class="vid__body">
+          <h3>Технопарк на Баркемпе: лучшие моменты</h3>
+          <span>Съёмка · монтаж</span>
+        </div>
+      </article>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     СТЕК
+     ════════════════════════════════════════════════════════════════════ -->
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label label--accent">05 — Стек и практики</span>
+      <h2>Инструменты и то, что я делаю на позиции лида</h2>
+    </div>
+
+    <div class="stack" style="margin-bottom:2.4rem">
+      <span class="tag tag--hot">AI-контент-пайплайны</span>
+      <span class="tag tag--hot">Контент-стратегия</span>
+      <span class="tag tag--hot">Руководство продакшном</span>
+      <span class="tag">YouTube и прямые эфиры</span>
+      <span class="tag">Telegram / VK</span>
+      <span class="tag">MailChimp + Zapier</span>
+      <span class="tag">HubSpot</span>
+      <span class="tag">Tilda</span>
+      <span class="tag">WordPress</span>
+      <span class="tag">Метрика · Вебмастер</span>
+      <span class="tag">UTM и контентная аналитика</span>
+      <span class="tag">Редактура и ghostwriting</span>
+      <span class="tag">ТЗ дизайнерам и монтажёрам</span>
+      <span class="tag">Найм и управление командой</span>
+      <span class="tag">DaVinci Resolve</span>
+      <span class="tag">Reason · Rode NT1-A · Focusrite</span>
+      <span class="tag">Публичная речь</span>
+      <span class="tag">Модерация эфиров</span>
+      <span class="tag">Английский C1 (EF SET 2024)</span>
+    </div>
+
+    <ul class="pts" style="max-width:78ch">
+      <li><strong>Приношу деньги, а не лайки:</strong> контент-система юрфирмы превратила канал
+          в поток — около 3 контрактов в месяц на дорогом продукте.</li>
+      <li><strong>Строю смену, которая стоит без меня:</strong> две редакции, два отпуска,
+          ноль звонков. Найм, увольнения, повышения — мои решения.</li>
+      <li><strong>Веду цикл целиком:</strong> стратегия → годовой план → тексты и эфир → монтаж →
+          дистрибуция → UTM-аналитика → защита перед собственником.</li>
+      <li><strong>Пишу сам, если надо:</strong> 19+ тыс. знаков открытых текстов трёх жанров,
+          RU и EN, лекции, регламенты.</li>
+      <li><strong>Передаю ремесло:</strong> СПбГУП — полуторачасовая лекция о реальной кухне редактуры
+          первокурсникам-журналистам.</li>
+      <li><strong>Не боюсь дорогих продуктов и NDA:</strong> юрфирма с контрактами
+          в десятки тысяч долларов — полтора года внутри.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     КОНТАКТЫ
+     ════════════════════════════════════════════════════════════════════ -->
+<section id="contact" style="border-top:1px solid var(--line-soft)">
+  <div class="wrap">
+    <div class="contact">
+      <img class="contact__ava" src="img/formal.jpg" alt="Юрий Макаров">
+      <span class="label label--accent">06 — Связаться</span>
+      <h2 style="margin-top:.85rem">Готов к интервью и осмысленному тестовому</h2>
+      <p>Удалённо, оплата в рублях. При сильном предложении — офис или гибрид в Санкт-Петербурге.
+         Не переезжаю, к командировкам готов.</p>
+
+      <div class="contact__grid">
+        <div class="ci">
+          <span class="label">Telegram</span>
+          <a href="https://t.me/battleshiptrader" target="_blank" rel="noopener">@battleshiptrader</a>
+        </div>
+        <div class="ci">
+          <span class="label">Почта</span>
+          <a href="/cdn-cgi/l/email-protection#7a0e08111b424c3a1d171b131654191517"><span class="__cf_email__" data-cfemail="92e6e0f9f3aaa4d2f5fff3fbfebcf1fdff">[email&#160;protected]</span></a>
+        </div>
+        <div class="ci">
+          <span class="label">Телефон</span>
+          <a href="tel:+79218665069">+7 921 866-50-69</a>
+        </div>
+        <div class="ci">
+          <span class="label">Город</span>
+          <span>Санкт-Петербург</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Юрий Макаров · руководитель контента</span>
+    <span>Абсолютные цифры части проектов под NDA · динамика и публичные метрики открыты</span>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     АНАЛИТИКА — Яндекс.Метрика
+     Создайте счётчик на metrika.yandex.ru, вставьте номер ниже
+     и уберите комментарии. Это даст ответ на вопрос
+     «кто открывал портфолио и с какой вакансии».
+     ════════════════════════════════════════════════════════════════════
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(00000000, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute;left:-9999px" alt=""></div></noscript>
+-->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
